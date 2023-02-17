@@ -1,21 +1,21 @@
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main() {
     srand(time(0));
     int n = rand();
 
-    std::cout << "Last digit of " << n << " is ";
+    printf("Last digit of %d is ", n);
 
     int last_digit = n % 10;
 
     if (last_digit > 5) {
-        std::cout << last_digit << " and is greater than 5" << std::endl;
+        printf("%d and is greater than 5\n", last_digit);
     } else if (last_digit == 0) {
-        std::cout << last_digit << " and is 0" << std::endl;
+        printf("%d and is 0\n", last_digit);
     } else {
-        std::cout << last_digit << " and is less than 6 and not 0" << std::endl;
+        printf("%d and is less than 6 and not 0\n", last_digit);
     }
 
     return 0;
