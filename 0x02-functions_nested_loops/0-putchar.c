@@ -1,23 +1,19 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "main.h"
 /**
- * main - Entry point
- *
- * @c: The character to print
- *
- * Return: Always 0 (success)
+ * main - prints the string "_putchar" from a character array.
+ * Return: 0 on success.
  */
-int _putchar(char c);
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
-	return (0);
+char y[] = {'_', 'p', 'u', 't', 'c', 'h',
+	    'a', 'r'};
+int h = 0;
+while (y[h] != '\0')
+{
+_putchar(y[h]);
+
+h++;
+}
+_putchar('\n');
+return (0);
 } 
